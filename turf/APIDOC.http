@@ -1,0 +1,102 @@
+### 
+GET http://127.0.0.1:8000/turfs/
+
+###
+POST http://127.0.0.1:8000/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "NJ Academy",
+    "location": "Kochi",
+    "turf_type": "Football",
+    "price_per_hour": 1000,
+    "opening_time": "10:00:00",
+    "closing_time": "12:00:00",
+    "is_available": true
+}
+
+###
+GET http://127.0.0.1:8000/turfs/1/
+
+###
+PUT http://127.0.0.1:8000/turfs/1/
+Content-Type: application/json
+
+{
+    "turf_name": "Green Arena",
+    "location": "Kochi",
+    "turf_type": "Football",
+    "price_per_hour": 1200,
+    "opening_time": "10:00:00",
+    "closing_time": "20:00:00",
+    "is_available": true
+}
+
+# {
+#     "turf_name": "AJ Academy",
+#     "location": "Kochi",
+#     "turf_type": "Cricket",
+#     "price_per_hour": 1000,
+#     "opening_time": "06:00:00",
+#     "closing_time": "17:00:00",
+#     "is_available": true
+# }
+
+# {
+#   "turf_name": "NJ Academy",
+#   "location": "Kochi",
+#   "turf_type": "Football",
+#   "price_per_hour": 1000,
+#   "opening_time": "10:00:00",
+#   "closing_time": "17:00:00",
+#   "is_available": true
+# }
+
+###
+DELETE http://127.0.0.1:8000/turfs/2/
+
+
+#Booking details
+### 
+GET http://127.0.0.1:8000/bookings/
+Accept: application/json
+
+### 
+POST http://127.0.0.1:8000/bookings/
+Content-Type: application/json
+
+# {
+#     "turf": 1,
+#     "customer_name": "Amal",
+#     "phone": "7871543200",
+#     "booking_date": "2026-11-01",
+#     "duration": 2
+# }
+
+# {
+#     "turf": 1,
+#     "customer_name": "Ravi",
+#     "phone": "9871543200",
+#     "booking_date": "2026-11-22",
+#     "duration": 2
+# }
+
+
+# {
+#     "turf": 3,
+#     "customer_name": "Kiran",
+#     "phone": "7871543200",
+#     "booking_date": "2026-11-01",
+#     "duration": 2
+# }
+
+
+{
+    "turf": 1,
+    "customer_name": "Kiran",
+    "phone": "7871543200",
+    "booking_date": "2026-11-01",
+    "duration": 5
+}
+
+
